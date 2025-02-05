@@ -1,0 +1,124 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #1e2a47, #2c3e50);
+    color: #ecf0f1;
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #34495e;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #f39c12;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Movie Poster */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Section Styles */
+.section {
+    background-color: #2c3e50;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.section:hover {
+    background-color: #1abc9c;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #bdc3c7;
+    line-height: 1.7;
+}
+
+/* "Why I Love It" Section Styling */
+.why-i-love-it {
+    background: linear-gradient(145deg, #2980b9, #8e44ad);
+    color: #ecf0f1;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-i-love-it p {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #ecf0f1;
+}
+
+.why-i-love-it:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect for Text */
+h2:hover, p:hover {
+    color: #f39c12;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
